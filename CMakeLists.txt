@@ -69,6 +69,8 @@ if(NOT RapidJSON_FOUND)
         GIT_TAG v1.1.0
         GITHUB_REPOSITORY "Tencent/rapidjson"
         OPTIONS "RAPIDJSON_BUILD_EXAMPLES OFF" "RAPIDJSON_BUILD_TESTS OFF" "RAPIDJSON_BUILD_DOC OFF")
+    
+    target_include_directories(rosx_introspection PRIVATE ${rapidjson_SOURCE_DIR}/include)
 endif()
 
 
